@@ -1,3 +1,5 @@
+@import url('/WordPress/fonts/fonts.css');
+
 * {
    box-sizing: border-box;
    margin: 0;
@@ -71,6 +73,7 @@
 .promo .promo_text span {
    color: #F9BF3B;
    text-transform: uppercase;
+   font-weight: 700;
 }
 .promo .promo_btn {
    width: 313px;
