@@ -1,4 +1,4 @@
-@import url('/WordPress/fonts/fonts.css');
+@import url('./../fonts/fonts.css');
 
 * {
    box-sizing: border-box;
@@ -6,26 +6,47 @@
    padding: 0;
 }
 
+html {
+   font-family: Roboto, sans-serif;
+   font-size: 1.3em;
+}
+
+button {
+   height: 3.6em;
+   padding: 0.7em;
+   display: block;
+   background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+   font-family: RobotoCondensed, sans-serif;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.22);
+   transform: none;
+   transition: transform .7s;
+   border: none;
+   cursor: pointer;
+}
+
 .wrapper {
-   Width: 1140px;
    margin: 0 auto;
+   Width: 1140px;
 }
 
-.promo {
-   background: url("/WordPress/img/screen1/main_bg.jpg") center center/cover no-repeat;
-   height: 800px;
-   padding: 34px 0 61px 0;
+.header {
+   padding: 2.1em 0 1em 0;
+   background: url("./../img/screen1/main_bg.jpg") center center/cover no-repeat;
+   min-height: 800px;
 }
 
-.promo .logo_img {
+.header .logo_img {
    height: 71px;
    width: 83px;
    display: block;
    margin: 0 auto;
 }
-.promo .logo_title {
+.header .logo_title {
    text-align: center;
-   font-family: Roboto;
    font-style: normal;
    font-weight: 500;
    font-size: 15px;
@@ -34,8 +55,7 @@
    margin-top: 10px;
 }
 
-.promo .promo_header {
-   font-family: Roboto;
+.header .header__subtitle {
    font-style: normal;
    font-weight: 900;
    font-size: 41px;
@@ -43,8 +63,7 @@
    text-transform: uppercase;
    color: #F9BF3B;
 }
-.promo .title_big {
-   font-family: Roboto;
+.header .header__main {
    font-style: normal;
    font-weight: 900;
    font-size: 80px;
@@ -54,15 +73,14 @@
    margin-top: 20px;
 }
 
-.promo h1 {
+.header h1 {
    margin-top: 53px;
 }
-.promo h2.promo_header {
+.header h2.header__subtitle {
    margin-top: 20px;
 }
 
-.promo .promo_text {
-   font-family: Roboto;
+.header .promo_text {
    font-style: normal;
    font-weight: 300;
    font-size: 21px;
@@ -70,28 +88,21 @@
    color: #FFFFFF;
    margin-top: 23px;
 }
-.promo .promo_text span {
+.header .promo_text span {
    color: #F9BF3B;
    text-transform: uppercase;
    font-weight: 700;
 }
-.promo .promo_btn {
-   width: 313px;
-   height: 72px;
-   background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-   font-family: RobotoCondensed;
-   font-size: 21px;
-   text-align: center;
-   text-transform: uppercase;
-   color: #FFFFFF;
-   text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
-   display: block;
-   margin: 0 auto;
-   margin-top: 72px;
+.header .promo_btn {
+   margin: 72px auto 0;
 }
-.promo .more_text {
-   font-family: Roboto;
+
+button:hover {
+   transform: scale(1.1);
+   transition: transform .7s;
+}
+.header .more_text {
+   font-family: Roboto, sans-serif;
    font-style: normal;
    font-weight: 200;
    font-size: 15px;
@@ -100,10 +111,23 @@
    color: #FFFFFF;
    margin-top: 70px;
 }
-.promo .more_img {
+
+.more {
+   margin: 0 auto;
+   width: 30%;
+}
+.more .more_img {
    display: block;
    margin: 0 auto;
-   margin-top: 4px;
+   padding: 15px;
+   width: 17%;
+   transform: none;
+   transition: all .7ms;
+}
+
+.more:hover .more_img {
+   transform: translateY(10px);
+   transition: all .7ms;
 }
 
 .more_about {
@@ -111,7 +135,6 @@
    background-color: #EFEFEF;
 }
 .more_about .more_about_header{
-   font-family: Roboto;
    font-style: normal;
    font-weight: normal;
    font-size: 30px;
@@ -123,11 +146,9 @@
    width: 220px;
    height: 7px;
    background: #F9BF3B;
-   margin: 0 auto;
-   margin-top: 18px;
+   margin: 18px auto 0;
 }
 .more_about .more_about_descr {
-   font-family: Roboto;
    font-style: normal;
    font-weight: normal;
    font-size: 23px;
@@ -145,7 +166,6 @@
 }
 .wrap .notebook .notebook_descr {
    width: 370px;
-   font-family: Roboto;
    font-style: normal;
    font-weight: 300;
    font-size: 15px;
@@ -171,7 +191,6 @@
    left: 389px;
 }
 .optimization .text .optimization_title {
-   font-family: Roboto;
    font-style: normal;
    font-weight: 900;
    font-size: 30px;
@@ -179,7 +198,6 @@
    color: #299CBD;
 }
 .optimization .text .optimization_text {
-   font-family: Roboto;
    font-style: normal;
    font-weight: 300;
    font-size: 17px;
@@ -187,16 +205,14 @@
    margin-top: 15px;
 }
 .bold {  /* почему не применяется стиль к классу bold? */
-   font-family: Roboto;
    font-weight: 700;
 }
 .result {
    height: 447px;
-   background: url("/WordPress/img/screen4/second_bg.png") center center/cover no-repeat;
+   background: url("./../img/screen4/second_bg.png") center center/cover no-repeat;
    padding: 86px 0 70px 0;
 }
 .result .result_title {
-   font-family: Roboto;
    font-style: normal;
    font-weight: normal;
    font-size: 30px;
@@ -213,9 +229,9 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   
+
 }
-.result .elem_res_img { /* не выравнивается картинка по вертикали. для выравнивания нужно родителю установить display flex &  align-items: center;*/
+.result .elem_res_img {
    height: 65px;
    width: 65px;
    display: block;
@@ -224,7 +240,6 @@
 .result .elem_res_descr {
    width: 230px;
    margin-top: 24px;
-   font-family: Roboto;
    font-style: normal;
    font-weight: 300;
    font-size: 17px;
@@ -246,29 +261,15 @@
 .gift .gift_text {
    margin-top: 45px;
    width: 1161px;
-   font-family: Roboto;
    font-style: normal;
    font-weight: normal;
    font-size: 30px;
    line-height: 43px;
    text-align: center;
-
    color: #252525;
 }
 .gift .gift_btn {
-   width: 313px;
-   height: 72px;
-   display: block;
-   margin: 0 auto;
-   margin-top: 50px;
-   background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-   font-family: RobotoCondensed;
-   font-size: 21px;
-   text-align: center;
-   text-transform: uppercase;
-   color: #FFFFFF;
-   text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+   margin: 50px auto 0;
 }
 
 .first_webinar {
@@ -280,7 +281,6 @@
    margin: 0 auto;
 }
 .first_webinar .first_webinar_title {
-   font-family: Roboto;
    font-style: normal;
    font-weight: normal;
    font-size: 30px;
@@ -290,17 +290,15 @@
    margin-top: 36px;
 }
 .first_webinar .date {
-   font-family: Roboto;
    font-style: normal;
    font-weight: 900;
    font-size: 36px;
    text-align: center;
    text-transform: uppercase;
-   color: #299CBD;f
+   color: #299CBD;
    margin-top: 30px;
 }
 .first_webinar .first_webinar_text {
-   font-family: Roboto;
    font-style: normal;
    font-weight: normal;
    font-size: 23px;
@@ -319,17 +317,13 @@ footer {
    margin: 0 auto;
    text-align: center;
    color: #888888;
-   font-family: Roboto;
    font-style: normal;
    font-weight: 300;
    font-size: 15px;
    text-decoration-line: underline;
 }
-
-
 footer a {
    color: #888888;
-   font-family: Roboto;
    font-size: 15px;
    font-weight: 300;
    line-height: 21px;
@@ -338,4 +332,16 @@ footer a {
 
 .underlined {
    text-decoration: underline;
+}
+
+
+@media (max-width: 1145px) {
+   .wrapper {
+      width: 80vw;
+   }
+
+   .wrap {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
 }
