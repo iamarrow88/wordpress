@@ -335,7 +335,7 @@ footer a {
 }
 
 
-@media (max-width: 1145px) {
+/* @media (max-width: 1145px) {
    .wrapper {
       width: 80vw;
    }
@@ -344,4 +344,4 @@ footer a {
       flex-wrap: wrap;
       justify-content: center;
    }
-}
+} */
