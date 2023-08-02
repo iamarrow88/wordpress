@@ -1,0 +1,48 @@
+@font-face {
+  font-weight: 900;
+  /* Соответствует значению black */
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Black.woff2') format('woff2');
+}
+
+/* Соответствует значению Extra Bold (Ultra Bold) */
+
+@font-face {
+  font-weight: 700;
+  /* Соответствует значению bold */
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2');
+}
+
+/* 600 Соответствует значению semi bold */
+
+@font-face {
+  font-weight: 500;
+  /* Соответствует значению medium */
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 400;
+  /* Соответствует значению normal/regular */
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-weight: 300;
+  /* Соответствует значению light */
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+      url('../fonts/Roboto-Light.woff') format('woff');
+}
+
+/* 200 Соответствует значению Extra Light (Ultra Light) */
+@font-face {
+  font-weight: 100;
+  /* Соответствует значению thin */
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Thin.woff2') format('woff2');
+}
