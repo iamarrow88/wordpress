@@ -412,10 +412,8 @@ button:hover {
 .modal {
   position: relative;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 4rem 1.5rem;
   width: 50vw;
-  height: 47vh;
-  min-height: 500px;
   background-color: #efefef;
   border-radius: 5px;
 
@@ -431,11 +429,6 @@ button:hover {
     flex-direction: column;
     justify-content: flex-start;
     gap: 7px;
-    input,
-    label,
-    textarea {
-      width: 40vw;
-    }
 
     input,
     textarea {
@@ -443,7 +436,7 @@ button:hover {
       border: none;
       outline: none;
       opacity: 0.7;
-      color: #f9bf3b;
+      color: #372a04;
       font-size: 1.2rem;
       font-weight: 600;
     }
@@ -454,6 +447,13 @@ button:hover {
 
     input {
       height: 45px;
+    }
+
+    label {
+      color: #8b640a;
+      span {
+        color: red;
+      }
     }
   }
 }
@@ -477,12 +477,6 @@ button:hover {
       max-width: 45vw;
       object-fit: contain;
     }
-  }
-
-  .modal__form input,
-  .modal__form label,
-  .modal__form textarea {
-    width: 36vw;
   }
 }
 
