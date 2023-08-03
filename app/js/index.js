@@ -1,6 +1,3 @@
-/* TODO
-2. модальные окна при нажатии на Записаться на интенсив */
-
 const closeBtn = document.querySelector('.modal__close');
 const layout = document.querySelector('#layout');
 const submit = document.querySelector('.modal__submit');
